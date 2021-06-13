@@ -125,8 +125,7 @@ export default class Home extends React.Component {
         <div className="section1">
           <div className="img">
             <div className="head_thought">
-              <h1>If there's a book that you want to read,</h1>
-              <h3>but it hasn't been written yet,</h3>
+             
 
             </div>
           </div>
