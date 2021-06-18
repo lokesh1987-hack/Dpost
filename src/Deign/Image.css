@@ -1,0 +1,11 @@
+* {
+    margin-top : 0px;
+    padding: 0px;
+}
+.upload {
+    display: block;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 60vh;
+}
+

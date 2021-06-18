@@ -11,6 +11,11 @@
     top: 0px;
     padding-top: 0px;
     margin-top: 0px;
+    animation: background-color;
+    animation-timing-function: ease;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
 }
 
 .header{
@@ -25,22 +30,32 @@
     justify-items: center;
     align-items: center;
     z-index: 100;
+    animation-name: header;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-duration: 7s;
 }
 .logo {
-    margin-left: 3vw;
-}
-.logo h1 {
-    margin: 2px;
-    font-weight: 1000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 5vw; 
-    letter-spacing: 0.1em;
+    margin-left: 6vw;
     display: flex;
-    animation-name: title;
+    animation-name: logo;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-delay: 0s;
 }
+.logo h1 {
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vw; 
+    letter-spacing: 0.1em;
+}
+.logo h1:hover {
+    margin-top: -2vh;
+    
+    color: #F91911;                                                                   
+}
+
 .a {
     position: absolute;
     display: flex;
@@ -211,6 +226,127 @@
     font-size: 1.5vw;
     margin-left: 3vw;
 }
+.section1 .thought1 {
+    position: absolute;
+    left: -92vw;
+    top: 34vh;
+    font-size: 2em;
+    animation: thought1_h1;
+    animation-duration: 10s;
+    animation-delay: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.section1 .thought1 h4 {
+   
+    letter-spacing: 1px;
+    font-weight: 600;
+
+}
+
+
+@keyframes thought1_h1 {
+    0%,25%{
+        transform: translateX(80vw);
+        word-spacing: -100px; 
+    }
+    25%,50%{
+        transform: translateX(95vw);
+        word-spacing: 1px;
+    }
+    50%,75%{
+        transform: translateX(95vw);
+        word-spacing: 1px;
+    }
+    75%,100%{
+        transform: translateX(-80vw);
+        word-spacing: -100px;
+    }
+}
+.section1 .thought2 {
+    position: absolute;
+    left: -95vh;
+    top: 40vh;
+    font-size: 3em;
+    border-left: solid 5px;
+    padding-left: 4px;
+    animation: thought2_h2;
+    animation-duration: 10s;
+    animation-delay: 26s; 
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+.section1 .thought2 h1 {
+    letter-spacing: 3px;
+    font-weight: 1000;
+    font-size: 4vw;
+}
+.section1 .thought2 h3 {    
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+
+@keyframes thought2_h2 {
+    0%,25%{
+        transform: translateX(2vw);
+        word-spacing: -100px;
+    }
+    25%,50%{
+        transform: translateX(60vw);
+        word-spacing: 5px;
+    }
+    50%,85%{
+
+        word-spacing: 5px;
+        transform: translateX(60vw);
+        
+    }
+    85%,100%{
+        transform: translateX(2wv);
+    } 
+}
+
+
+
+@keyframes background-color {
+    0% {
+        background-color: darkkhaki;
+        width: 0%;
+    }
+    10% {
+        background-color: rgba(50, 11, 0, 0.87);       
+    }
+    20% {
+        background-color: rgba(191, 01, 00, 0.87);
+       
+    }
+    30% {
+        background-color:  rgba(131, 21, 12, 0.87);
+        
+    }
+    40% {
+        background-color:  rgba(111, 1, 18, 0.87);
+    }    
+     50% {
+        background-color:  #F91911;
+        width: 50%;
+    }
+}
+
+@keyframes header {
+    0%,50% {
+        transform: translateY(-18vh);  
+     }
+     
+    50%,100% {
+        
+     }
+
+} 
+
 
 
 

@@ -1,4 +1,7 @@
- import firebase from "firebase"
+import firebase from "firebase"
+import "firebase/storage"
+import "firebase/firestore"
+
 var firebaseconfig = {
     apiKey: "AIzaSyD4cpFzCkDZLn1QuPntI0ONb31WVbGsDdc",
     authDomain: "myfirstreact-55c97.firebaseapp.com",
@@ -9,12 +12,14 @@ var firebaseconfig = {
     measurementId: "G-4HHDD03YJY"
 }
 
-var fire = firebase.initializeApp(firebaseconfig);
+export var fire = firebase.initializeApp(firebaseconfig);
+export const projectstorage = firebase.storage()
+export const projectfirestore = firebase.firestore()
 
 // Retrive a data from firebase database
 
 // export const auth = auth.firebase();
-// export  const db = db.firebase();
+// export  const db = firebase.initializeApp(firebaseconfig);
 
 
 export default fire;

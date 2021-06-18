@@ -1,5 +1,5 @@
 import React from 'react'
-import fire from "../fire";
+import { fire } from "../fire";
 import '../Deign/Home.css';
 import { NavLink, Route } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom'
@@ -122,14 +122,19 @@ export default class Home extends React.Component {
   render() {
     return (
       <div >
-        <div className="section1">
-          <div className="img">
-            <div className="head_thought">
-             
-
+        <div class="section1">
+        <div class="img">
+            <div class="thought1">
+                <h4>"Don't hide your feelings from the people you care about.</h4><br /> 
+                  <h4>  If you wait too long to tell them,</h4> <br />
+                   <h4> you might miss your chance."</h4>
             </div>
-          </div>
-
+            <div class="thought2">
+                <h1>"Let me live, love</h1>
+                <h3>and say it well in good sentences."</h3>
+            </div>
+           
+        </div>
         </div>
         <Router>
           <div className="section2">
